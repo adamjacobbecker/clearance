@@ -1,6 +1,6 @@
 module Clearance
   class Session
-    REMEMBER_TOKEN_COOKIE = 'remember_token'.freeze
+    REMEMBER_TOKEN_COOKIE = "remember_token_#{Rails.env.downcase}".freeze
 
     def initialize(env)
       @env = env
